@@ -7,3 +7,7 @@
 	color:#28313F;
 	text-align: center;
 }
+
+#honeypot {
+	display: none;
+}

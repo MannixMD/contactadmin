@@ -197,6 +197,12 @@ class main_controller
 				$error[] = $this->language->lang('FORM_INVALID');
 			}
 
+			// honeypot
+			if ($this->request->variable('honeypot', '', true) != '')
+			{
+				throw new http_exception(401, 'NOT_AUTHORISED');
+			}
+
 			if (!function_exists('validate_data'))
 			{
 				include($this->root_path . 'includes/functions_user.' . $this->php_ext);

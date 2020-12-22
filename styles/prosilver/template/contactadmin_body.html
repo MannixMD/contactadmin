@@ -31,6 +31,10 @@
 			<dt><label for="email_confirm">{{ lang('CONTACT_YOUR_EMAIL_CONFIRM') }}{{ lang('COLON') }}</label></dt>
 			<dd><input type="text" class="inputbox autowidth" name="email_confirm" id="email_confirm" value="{{ EMAIL_CONFIRM }}" size="30" tabindex="3" /></dd>
 		</dl>
+		<dl id="honeypot">
+			<dt></dt>
+			<dd><input type="text" class="inputbox autowidth" name="honeypot" id="honeypot" value="" size="30" tabindex="3" /></dd>
+		</dl>
 		<hr />
 		{% endif %}
 		{% if CONTACT_REASONS %}
